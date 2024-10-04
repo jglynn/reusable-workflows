@@ -20,7 +20,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
         with: 
-          sparse-checkout: .
+          sparse-checkout: |
+            .
+            .github
 
       - name: Run a one-line script
         run: echo Hello from the common pr workflow
