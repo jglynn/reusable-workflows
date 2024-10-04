@@ -29,3 +29,6 @@ jobs:
 
       - name: List directory
         run: ls -lrt
+
+      - name: run local action
+        uses: .github/workflows/local-ci.yml@main
