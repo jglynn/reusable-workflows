@@ -24,4 +24,4 @@ jobs:
         run: echo Hello from the common pr workflow
 
       - name: List directory
-        run: ls lrt
+        run: ls -lrt
