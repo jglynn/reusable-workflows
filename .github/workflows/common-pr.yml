@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  setup:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -28,6 +28,7 @@ jobs:
 
       - name: List directory
         run: ls -lrt
-
-      - name: run local action
-        uses: ${{ inputs.workflow_ref }}
+        
+  build:
+    name: build
+    uses: ${{ inputs.workflow_ref }}
