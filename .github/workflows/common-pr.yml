@@ -30,6 +30,6 @@ jobs:
         run: ls -lrt
       - name: list workflow
         run: echo ${{ inputs.workflow_ref }}
-  # build:
-  #   name: build
-  #   uses: ${{ inputs.workflow_ref }}        
+  build:
+    name: build
+    uses: ${{ inputs.workflow_ref }}        
