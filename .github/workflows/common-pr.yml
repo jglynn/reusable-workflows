@@ -28,7 +28,8 @@ jobs:
 
       - name: List directory
         run: ls -lrt
-        
-  build:
-    name: build
-    uses: ${{ inputs.workflow_ref }}
+      - name: list workflow
+        run: echo ${{ inputs.workflow_ref }}
+  # build:
+  #   name: build
+  #   uses: ${{ inputs.workflow_ref }}        
